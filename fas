@@ -7,7 +7,7 @@ complex;
 
 complex read1()
 {
-    complex n1, temp;
+    complex n1, temp,mul;
    
    
     printf("Enter the real and imaginary parts: ");
@@ -55,7 +55,7 @@ complex multi(complex input1, complex input2)
 
 int main() {
    
-    complex n1, n2, result, input1, input2;
+    complex n1, n2, result1,result2, input1, input2;
     printf("For 1st complex number \n");
     input1 = read1();
    
@@ -64,10 +64,10 @@ int main() {
    
     print(input1, input2);
    
-    result = add(input1, input2);
-    result =multi(input1, input2);
+    result1 = add(input1, input2);
+    result2 = multi(input1, input2);
 
-    printf("Sum = %.1f + %.1fi", result.real, result.imag);
-    printf("Product = %.1f * %.1fi", result.real, result.imag);
+    printf("Sum = %.1f + %.1fi", result1.real, result1.imag);
+    printf("Product = %.1f * %.1fi", result2.real, result2.imag);
     return 0;
 }
