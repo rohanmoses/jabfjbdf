@@ -1,0 +1,8 @@
+complex multi(complex input1, complex input2)
+{
+    complex mul;
+
+    mul.real = input1.real * input2.real - input1.imag * input2.imag;
+    mul.imag = input1.real * input2.imag + input2.real * input1.imag;
+    return(mul);
+}
